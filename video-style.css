@@ -1,0 +1,257 @@
+/* =======================HEADER=========================== */
+.box1 {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    height: 20%;
+    cursor: pointer;
+    position: sticky;
+    white-space: nowrap;
+    top: 0;
+    z-index: 999; 
+}
+
+.box1 p{
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-family: roboto condensed, sans-serif;
+    word-spacing: 2px;
+    display: inline-block;
+    animation: move 25s linear infinite;
+}
+
+.box1 h1 {
+    position: relative;
+    float: center;
+    left: -770px;
+    margin-top: 10px;
+    font-size: 120px;
+    font-family: 'Times New Roman', sans-serif, bold;
+    text-transform: capitalize;
+    width: 460px;
+    word-spacing: 0px;
+    font-weight: normal;
+    line-height: 72px;
+}
+
+ul {
+  float: right;
+  color: rgb(0, 0, 0);
+}
+
+ul li {
+  margin-top: -10px;
+  float: right;
+  width: 100px;
+  font-size: 2em;
+  font-family: roboto condensed, sans-serif;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+ol {
+  float: center;
+}
+
+ol li {
+  float: left;
+  width: 90px;
+  position: relative;
+  left: 29%;
+  margin-top: 120px;
+  list-style-type: none;
+  font-family: roboto condensed, sans-serif;
+  font-size: 19px;
+  color: rgb(0, 0, 0);
+}
+
+ol li a {
+  text-decoration: none;
+}
+
+ol li a:hover {
+  border-bottom: 4px solid #000000;
+}
+
+/* =======================VIDEOS BODY=========================== */
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: roboto condensed, sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main img{
+    /* width: 25%; */
+    width:320px;
+    padding: 20px 50px;
+}
+
+.main h2{
+    width:100%;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.video-thumbnail{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 100px;
+}
+
+.video-thumbnail h3{
+    padding: 0 50px;
+    width: 320px;
+}
+
+/* =======================MAIN VIDEO BODY=========================== */
+
+.video-main{
+    width: 100%;
+    display: flex;
+}
+
+.container{
+    padding: 50px;
+}
+
+.container h2{
+    font-size: 3em;
+}
+.container p, .container h3{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.video{
+    width: 100%;
+    padding-top: 50px;
+}
+
+.comments-container{
+    margin: 50px;
+    margin-left: 0;
+    width: 80%;
+}
+
+.comments-container h2{
+    padding-bottom: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.comments-container input{
+    opacity: 0.5;
+    border-radius: 50px;
+    border: solid rgb(187, 187, 187);
+    padding: 5px;
+    margin: 5px;
+    width: 80%;
+    font-size: 1.2em;
+}
+
+.comment-section{
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 10px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-anchor: auto;
+}
+
+.comment{
+    padding: 5px;
+}
+
+.comment h1{
+    font-size: large;
+    padding: 10px;
+    margin: 0;
+    background-color: aquamarine;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.comment div{
+    display: flex;
+}
+
+.comment div p{
+    margin: 0;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.comment > p{
+    margin: 0;
+    padding-top: 5px;
+}
+
+/* =======================INTERACTION PANEL=========================== */
+
+.interaction{
+    position: fixed;
+    top: 40%;
+    background-color: black;
+    color: red;
+    padding: 50px;
+    border-radius: 20px;
+    border: red solid 4px;
+    text-align: center;
+}
+
+.interaction p{
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.interaction button{
+    font-size: 1.1em;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* ============================ FOOTER =============================== */
+
+footer{
+    background-color: black;
+    font-family: 'Times New Roman', sans-serif, bold;
+    color: white;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* ======================= KEYFRAMES =========================== */
+
+@keyframes blinkingBackground{
+    0%		{ background-color: rgb(173, 173, 173);}
+    25%		{ background-color: rgb(148, 148, 148);}
+    50%		{ background-color: rgb(97, 97, 97);}
+    75%		{ background-color: #3e3e3e;}
+    100%	{ background-color: #dddddd;}
+}
+
+@keyframes move {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+@keyframes header{
+    0%		{ filter: invert(0.0)}
+    50%		{ filter: invert(0.70)}
+    100%	{ filter: invert(1)}
+}
