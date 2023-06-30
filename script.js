@@ -65,7 +65,7 @@ close_alert = (val)=>{
 cmnt.addEventListener('keyup', (event)=>{
     if (event.key === 'Enter'){
         new_cmnt = comments[6].cloneNode(true);
-        new_cmnt.querySelectorAll('p')[1].innerText = event.path[0].value;
+        new_cmnt.querySelectorAll('p')[1].innerText = event.target.value;
         new_cmnt.style.display='';
         cmnt_sec.appendChild(new_cmnt)
         console.log(event.path[0].value)
