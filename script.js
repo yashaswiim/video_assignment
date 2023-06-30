@@ -68,8 +68,8 @@ cmnt.addEventListener('keyup', (event)=>{
         new_cmnt.querySelectorAll('p')[1].innerText = event.target.value;
         new_cmnt.style.display='';
         cmnt_sec.appendChild(new_cmnt)
-        console.log(event.path[0].value)
-        event.path[0].value = ''
+        console.log(event.target.value)
+        event.target.value = ''
     }
 })
 
